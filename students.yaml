@@ -1,1 +1,17 @@
 - name: "Siva Ganesh"
+dob: "1990-05-15"
+mobilenumber: "1234567890"
+addresses:
+  - type: "current"
+    street: "123 Main St"
+    city: "Hyderabad"
+    state: "Telangana"
+    country: "India"
+    flatnumber: "A-101"
+
+  - type: "permanent"
+    street: "456 Elm St"
+    city: "Bangalore"
+    state: "Karnataka"
+    country: "India"
+    flatnumber: "B-202"
