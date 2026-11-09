@@ -1,7 +1,7 @@
 - name: "Siva Ganesh"
-dob: "1990-05-15"
-mobilenumber: "1234567890"
-addresses:
+  dob: "1990-05-15"
+  mobilenumber: "1234567890"
+  addresses:
   - type: "current"
     street: "123 Main St"
     city: "Hyderabad"
