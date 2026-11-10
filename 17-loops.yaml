@@ -1,0 +1,12 @@
+- name: install packages
+  hosts: local
+  connection: local
+  tasks:
+  - name: install packages using loop
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: present
+    loop:
+      - git
+      - vim
+      - tree

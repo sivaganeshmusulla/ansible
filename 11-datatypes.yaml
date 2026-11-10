@@ -1,0 +1,18 @@
+- name: datatypes
+  hosts: local
+  connection: local
+  vars:
+    PROGRAM: 'DevSecops with AWS'#string
+    DURATION: 140 #int/number
+    IS_LIVE: true #bool
+    DETAILS: #map/dictionary
+      MONTHS: 4
+      TRAINER: "SIVA"
+    TOPICS: #list/array
+      - Ansible
+      - Docker
+      - Kubernetes
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: "Program is {{ PROGRAM }} and duration is {{ DURATION }} and is live {{ IS_LIVE }} and details are {{ DETAILS }} and topics are {{ TOPICS }}"
