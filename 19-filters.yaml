@@ -1,0 +1,7 @@
+- name: demo on filters
+  hosts: local
+  connection: local
+  tasks:
+  - name: print names in upper case
+    ansible.builtin.debug:
+      msg: "Hi Siva, {{ Greeting | default('Good Morning') }}"
